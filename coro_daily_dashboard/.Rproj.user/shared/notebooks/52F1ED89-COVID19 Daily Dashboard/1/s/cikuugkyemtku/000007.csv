@@ -1,0 +1,6 @@
+"0","df_new_cases_day <- new_cases_day %>%"
+"0","  select("
+"0","    Date, Country_Region, Province_State,"
+"0","    Count, Daily_Count, Weekly_Count, First_Case"
+"0","  )"
+"0","df_new_cases_day"

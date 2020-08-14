@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587245536985.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "77610085",
+    "id" : "3AF0270F",
+    "lastKnownWriteTime" : 1587328609,
+    "last_content_update" : 1587328609730,
+    "path" : "M:/CORONA/Hands_on_COVID_19_Dashboard/Hands_on_COVID_19/ui.R",
+    "project_path" : "Hands_on_COVID_19/ui.R",
+    "properties" : {
+        "cursorPosition" : "53,64",
+        "scrollLine" : "46"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

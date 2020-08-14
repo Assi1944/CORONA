@@ -1,0 +1,5 @@
+"0","library(kableExtra) # complex tables
+"
+"2","Error: package or namespace load failed for ‘kableExtra’ in get(method, envir = home):
+ lazy-load database 'C:/Program Files/R/R-3.6.3/library/kableExtra/R/kableExtra.rdb' is corrupt
+"

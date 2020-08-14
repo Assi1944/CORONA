@@ -1,0 +1,75 @@
+---
+title: "kable_test"
+author: "K.-P. Pleissner"
+date: "1 4 2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## kable testing
+### https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html#table_styles
+
+
+```{r cars}
+library(knitr)
+library(kableExtra)
+
+```
+
+## VARIOUS POSSIBILITIES FOR TESTING 
+
+
+```{r  echo=TRUE}
+dt <- mtcars[1:5, 1:6]
+dt
+kable(dt)
+
+
+```
+
+```{r  echo=TRUE}
+
+dt %>%
+  kable() %>%
+  kable_styling()
+```
+
+```{r  echo=TRUE}
+kable(dt) %>%
+  kable_styling(bootstrap_options = c("striped", "hover",full_width = F, position = "left"))
+```
+
+```{r  echo=TRUE}
+kable(dt) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed",font_size = 12))
+
+```
+
+```{r  echo=TRUE}
+kable(dt) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+
+
+```
+```{r  echo=TRUE}
+require(dplyr)
+
+iris[1:10, ] %>%
+  mutate_if(is.numeric, function(x) {
+    cell_spec(x, bold = T, 
+              color = spec_color(x, end = 0.9),
+              font_size = spec_font_size(x))
+  }) %>%
+  mutate(Species = cell_spec(
+    Species, color = "white", bold = T,
+    background = spec_color(1:10, end = 0.9, option = "A", direction = -1)
+  )) %>%
+  kable(escape = F, align = "c") %>%
+  kable_styling(c("striped", "condensed"), full_width = F)
+```

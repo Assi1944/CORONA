@@ -1,0 +1,57 @@
+"0",""
+"0",""
+"0",""
+"0",""
+"0","###############  new ####################"
+"0","# taken from COVID19-Daily-Dashboard.Rmd"
+"0","# with new data file structure at JHU"
+"0",""
+"0",""
+"0","link <- ""https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/"""
+"0","csv_list <- c("
+"0","  ""time_series_covid19_confirmed_global.csv"","
+"0","  ""time_series_covid19_deaths_global.csv"","
+"0","  ""time_series_covid19_recovered_global.csv"""
+"0",")"
+"0",""
+"0","for (csv in csv_list) {"
+"0","  path <- paste(link, csv, sep = """")"
+"0","  download_path <- paste(""data_raw/"", csv, sep = """")"
+"0","  download.file(path, destfile = download_path)"
+"0"," "
+"0","}"
+"2","trying URL 'https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
+"
+"2","Content type 'text/plain; charset=utf-8'"
+"2"," length 58277 bytes (56 KB)
+"
+"2","downloaded 56 KB
+
+"
+"2","trying URL 'https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
+"
+"2","Content type 'text/plain; charset=utf-8'"
+"2"," length 48076 bytes (46 KB)
+"
+"2","downloaded 46 KB
+
+"
+"2","trying URL 'https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv'
+"
+"2","Content type 'text/plain; charset=utf-8'"
+"2"," length 49492 bytes (48 KB)
+"
+"2","downloaded 48 KB
+
+"
+"0","## load data into R"
+"0","raw.data.confirmed <- read.csv('./data_raw/time_series_covid19_confirmed_global.csv')"
+"0","raw.data.deaths <- read.csv('./data_raw/time_series_covid19_deaths_global.csv')"
+"0","raw.data.recovered <- read.csv('./data_raw/time_series_covid19_recovered_global.csv')"
+"0",""
+"0","dim(raw.data.confirmed)"
+"1","[1]"
+"1"," 259"
+"1","  78"
+"1","
+"

@@ -1,0 +1,12 @@
+"0","ggplot(dead_conf_recv, aes(x = Date, y=Count, group=Status)) +"
+"0","  geom_line(aes(color = Status), size=1.3) +"
+"0","  ggtitle(""Cumulative Status of All Cases"") +"
+"0","  scale_color_manual(values = c(""blue3"", ""red3"", ""green3"")) +"
+"0","  scale_x_date(date_breaks = ""7 day"", "
+"0","               date_minor_breaks = ""7 day"", "
+"0","               date_labels = ""%b %d"") +"
+"0","  theme_light() +"
+"0","  theme(legend.position=""bottom"", legend.title = element_blank())"
+"2","Error in ggplot(dead_conf_recv, aes(x = Date, y = Count, group = Status)) : 
+  could not find function ""ggplot""
+"

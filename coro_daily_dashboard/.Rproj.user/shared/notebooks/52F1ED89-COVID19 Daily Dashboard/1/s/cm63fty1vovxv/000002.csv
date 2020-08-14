@@ -1,0 +1,8 @@
+"0","cv_con <- read_csv(""data_raw/time_series_covid19_confirmed_global.csv"") %>%"
+"0","  gather(key = ""Date"", value = Confirmed, -Lat, -Long, -`Province/State`, -`Country/Region`)"
+"0",""
+"0","cv_ded <- read_csv(""data_raw/time_series_covid19_deaths_global.csv"") %>%"
+"0","  gather(key = ""Date"", value = Dead, -Lat, -Long, -`Province/State`, -`Country/Region`)"
+"0",""
+"0","cv_rec <- read_csv(""data_raw/time_series_covid19_recovered_global.csv"") %>%"
+"0","  gather(key = ""Date"", value = Recovered, -Lat, -Long, -`Province/State`, -`Country/Region`)"

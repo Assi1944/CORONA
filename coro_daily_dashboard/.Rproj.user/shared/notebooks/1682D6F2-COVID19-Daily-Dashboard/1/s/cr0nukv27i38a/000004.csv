@@ -1,0 +1,8 @@
+"0","cv_merge <- merge(cv_con, cv_ded, by = c(""Province/State"", ""Lat"", ""Long"", ""Country/Region"", ""Date""), all = TRUE) %>%"
+"0","  merge(cv_rec, by = c(""Province/State"", ""Lat"", ""Long"", ""Country/Region"", ""Date""), all = TRUE) %>%"
+"0","  rename(""Country_Region"" = ""Country/Region"") %>%"
+"0","  rename(""Province_State"" = ""Province/State"")"
+"0","cv_merge$Date <- as.Date(cv_merge$Date, format = ""%m/%d/%y"")"
+"0",""
+"0","cv <- gather(cv_merge, key = ""Status"", value = Count, -Date, -Lat, -Long, -Province_State, -Country_Region)"
+"0","cv <- cv[with(cv, order(Country_Region, Province_State, Status, Date)), ]"

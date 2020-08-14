@@ -1,0 +1,11 @@
+"0","percent_count <- cv_merge %>%"
+"0","  group_by(Date) %>%"
+"0","  filter(Date <= latest_date) %>%"
+"0","  summarise("
+"0","    Confirmed = sum(Confirmed, na.rm = TRUE),"
+"0","    Dead = sum(Dead, na.rm = TRUE),"
+"0","    Recovered = sum(Recovered, na.rm = TRUE)"
+"0","  )"
+"2","Error in cv_merge %>% group_by(Date) %>% filter(Date <= latest_date) %>%  : 
+  could not find function ""%>%""
+"

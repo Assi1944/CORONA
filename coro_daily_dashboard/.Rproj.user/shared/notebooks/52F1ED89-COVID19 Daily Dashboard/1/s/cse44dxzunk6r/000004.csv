@@ -1,0 +1,38 @@
+"0","link <- ""https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/""
+csv_list <- c(
+  ""time_series_covid19_confirmed_global.csv"",
+  ""time_series_covid19_deaths_global.csv"",
+  ""time_series_covid19_recovered_global.csv""
+)
+
+
+for (csv in csv_list) {
+  path <- paste(link, csv, sep = """")
+  download_path <- paste(""data_raw/"", csv, sep = """")
+  download.file(path, destfile = download_path)
+}
+"
+"2","trying URL 'https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
+"
+"2","Content type 'text/plain; charset=utf-8'"
+"2"," length 51379 bytes (50 KB)
+"
+"2","downloaded 50 KB
+
+"
+"2","trying URL 'https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'
+"
+"2","Content type 'text/plain; charset=utf-8'"
+"2"," length 43241 bytes (42 KB)
+"
+"2","downloaded 42 KB
+
+"
+"2","trying URL 'https://github.com//CSSEGISandData/COVID-19/raw/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv'
+"
+"2","Content type 'text/plain; charset=utf-8'"
+"2"," length 44093 bytes (43 KB)
+"
+"2","downloaded 43 KB
+
+"

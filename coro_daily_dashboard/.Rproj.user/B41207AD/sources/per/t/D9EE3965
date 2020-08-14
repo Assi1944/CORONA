@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585516740389.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1312955238",
+    "id" : "D9EE3965",
+    "lastKnownWriteTime" : 1585775085,
+    "last_content_update" : 1585775085877,
+    "path" : "M:/CORONA/coro_daily_dashboard/COVID19-Daily-Dashboard.Rmd",
+    "project_path" : "COVID19-Daily-Dashboard.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "139,12",
+        "last_setup_crc32" : "",
+        "scrollLine" : "123",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

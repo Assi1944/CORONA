@@ -1,0 +1,13 @@
+{
+    "path" : "M:/DNA Damage/Ctr_R_scripts/coro_daily_dashboard/data_raw",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 4
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587328243415.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6666789C",
+    "lastKnownWriteTime" : 7310575177828016750,
+    "last_content_update" : 1587328243415,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "CDEECFBD",
+        "caption" : "daten",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=daten&cache_key=CDEECFBD",
+        "displayedObservations" : "88",
+        "environment" : "",
+        "expression" : "daten",
+        "object" : "daten",
+        "preview" : "0",
+        "totalObservations" : "88",
+        "variables" : "9"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

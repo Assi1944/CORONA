@@ -1,0 +1,3 @@
+"0","cv <- daily_weekly_counter(cv)"
+"0","latest_date <- sort(cv$Date, decreasing = TRUE)[1] - 1"
+"0","cv <- filter(cv, Date <= latest_date)"

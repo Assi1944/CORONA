@@ -1,0 +1,7 @@
+"0","library(magrittr) # pipe operations"
+"0","library(lubridate) # date operations"
+"0","library(tidyverse) # ggplot2, tidyr, dplyr..."
+"0","library(gridExtra) # multiple grid-based plots on a page"
+"0","library(ggforce) # accelerating ggplot2"
+"0","library(kableExtra) # complex tables"
+"0","library(leaflet) ## map"
